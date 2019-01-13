@@ -16,21 +16,41 @@
     #shade1 {
       background: gray;
       animation-name: shade1;
-      animation-duration: 4s;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+    }
+    
+    @keyframes shade1 {
+      from {left: 200px;}
+      to {left: 0px;}
     }
     
     #shade2 {
       background: gray;
-      animation-name: shaade2;
-      animation-duration: 4s;
+      animation-name: shade2;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+    }
+    
+    @keyframes shade2 {
+      from {right: 200px;}
+      to {right: 0px;}
     }
     
     #peekaboo {
       z-index: -1;
       background: orange;
-      animation-name: example;
+      animation-name: peekaboo;
       animation-duration: 4s;
     }
+    
+    @keyframes peekaboo {
+      0%   {opacity: 0;}
+      25%  {opacity: 0;}
+      50%  {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    
   </style>
 </head>
 <body>
